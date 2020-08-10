@@ -1,0 +1,33 @@
+please inter the Netlist in the file "circuits.txt"
+
+*V is max
+
+W magnitueof(w)                   //w is angular frequency in radians 
+IVS node1  node2 voltageval       //VIS(independent voltage sourse) *(in complex form)  *high voltage node writen frist
+
+ICS node1  node2  currentval     //CIS(independent current sourse)  *(in complex form)
+
+DCS node1  node2  ratio         //DCS (dependent crrent sourse)
+V   node1  node2                //depend on voltage (we write the two node of the voltage) *high voltage node writen frist
+
+DCS node1  node2  ratio          //DCS (dependent crrent sourse)
+C   node1  node2                //depend on current   (**we write to node between bttary its voltage is zero where the current flow through it )   
+  
+DVS node1  node2  ratio         //DVS (dependent voltage sourse)
+V   node1  node2                //depend on voltage (we write the two node of the voltage) *high voltage node must writen frist
+
+DVS node1  node2  ratio         //DVS (dependent voltage sourse)
+C                               //depend on current  (**we write to node between bttary its voltage is zero where the current flow through it )
+      
+R node(p) node(e) resisvalue             
+CAP node(p) node(e) capacitance    //for capacitor
+R node(p) node(e) resisvalue
+L node(p) node(e) inductance
+ 
+
+when you run the code yo while get the volte in each node and the current in each voltage sourse and active power in resistance and the reactive power in CAP & IND
+ 
+**please before you run the code you should make sure there is only the netlist in the file  "circuits.txt"
+outherwise you will get error
+
+Have a nice experiment with our project!   
